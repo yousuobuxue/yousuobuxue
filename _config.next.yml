@@ -50,9 +50,9 @@ darkmode: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  small: /images/favicon-16x16.jpeg
+  medium: /images/favicon-32x32.jpeg
+  apple_touch_icon: /images/apple-touch-icon.jpeg
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /manifest.json
 
@@ -140,9 +140,9 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar.jpg
   # If true, the avatar will be displayed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -209,7 +209,8 @@ footer:
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
+    # name: fa fa-heart
+    name: 
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
@@ -219,7 +220,7 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
