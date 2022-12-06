@@ -337,7 +337,8 @@
 <li><p>repeat-y 背景平铺 y 轴</p>
 </li>
 </ul>
-<h4 id="背景位置"><a href="#背景位置" class="headerlink" title="背景位置"></a>背景位置</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">background-position</span>: center left;</span><br></pre></td></tr></table></figure>
+<h4 id="背景位置"><a href="#背景位置" class="headerlink" title="背景位置"></a>背景位置</h4><p>使用数值在雪碧图中定位想要的图</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">background-position</span>: center left;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>top 顶部</p>
@@ -565,6 +566,60 @@
 <li><p>数值越大，越靠上</p>
 </li>
 </ul>
+<h3 id="显示与隐藏"><a href="#显示与隐藏" class="headerlink" title="显示与隐藏"></a>显示与隐藏</h3><ul>
+<li><p>display 设置 none 隐藏元素，隐藏后标准流中不保留位置</p>
+</li>
+<li><p>visibility 设置 hidden 隐藏元素后，保留原有位置</p>
+</li>
+<li><p>overflow 设置 hidden 文本内容超过元素的宽高后，自动隐藏</p>
+</li>
+</ul>
+<h3 id="cursor"><a href="#cursor" class="headerlink" title="cursor"></a>cursor</h3><p>鼠标放置元素上显示样式</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>default</td>
+<td>默认</td>
+</tr>
+<tr>
+<td>pointer</td>
+<td>小手</td>
+</tr>
+<tr>
+<td>move</td>
+<td>移动</td>
+</tr>
+<tr>
+<td>text</td>
+<td>文本</td>
+</tr>
+<tr>
+<td>not-allowed</td>
+<td>禁止</td>
+</tr>
+</tbody></table>
+<h3 id="outline"><a href="#outline" class="headerlink" title="outline"></a>outline</h3><p>绘制元素周围的一条线，outline-color | outline-style | outline-width;</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">outline</span>: none;</span><br><span class="line"><span class="attribute">outline</span>: <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="resize"><a href="#resize" class="headerlink" title="resize"></a>resize</h3><p>取消文本框拖拽</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">resize</span>: none;</span><br></pre></td></tr></table></figure>
+
+<h3 id="vertical-align"><a href="#vertical-align" class="headerlink" title="vertical-align"></a>vertical-align</h3><p>文本与行内块在同一盒子内，可使用 vertical-align 消除行内块与边框之间的间距。间距是为文本所留的基线内容</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">vertical-align</span>: middle;</span><br></pre></td></tr></table></figure>
+
+<h3 id="white-space"><a href="#white-space" class="headerlink" title="white-space"></a>white-space</h3><p>文本强制一行显示</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">white-space</span>: nowrap;</span><br></pre></td></tr></table></figure>
+
+<h3 id="text-overflow"><a href="#text-overflow" class="headerlink" title="text-overflow"></a>text-overflow</h3><p>文本溢出显示方式</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">text-overflow</span>: clip; <span class="comment">/* 剪切 */</span></span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis; <span class="comment">/* 省略号 */</span></span><br></pre></td></tr></table></figure>
+
+<p>使用溢出的文本用省略号展示</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">white-space</span>: nowrap;</span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"><span class="attribute">text-overflow</span>: ellipsis;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>CSS</category>
