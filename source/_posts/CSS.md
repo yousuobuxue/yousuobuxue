@@ -310,6 +310,8 @@ background-repeat: no-repeat;
 
 #### 背景位置
 
+使用数值在雪碧图中定位想要的图
+
 ```css
 background-position: center left;
 ```
@@ -605,7 +607,7 @@ div {
 
 父盒子不设置高度，但子盒子浮动后又不占有位置，父盒子的高度就为 0，就会影响下面标准流的盒子
 
-##### 添加空元素
+#### 添加空元素
 
 ```css
 .box1 {
@@ -630,7 +632,7 @@ div {
 </div>
 ```
 
-##### 父元素设置 overflow 属性
+#### 父元素设置 overflow 属性
 
 ```html
 <div style="overflow: hidden;">
@@ -639,7 +641,7 @@ div {
 </div>
 ```
 
-##### :after 伪元素清除浮动
+#### :after 伪元素清除浮动
 
 ```css
 .clearfix:after{
@@ -655,7 +657,7 @@ div {
 }
 ```
 
-##### 双伪元素清除浮动
+#### 双伪元素清除浮动
 
 ```css
 clearfix:before,.clearfix:after {
@@ -668,6 +670,8 @@ clearfix:before,.clearfix:after {
 ```
 
 ### 定位
+
+定位用来布局，定位 = 定位模式 + 偏移
 
 #### 静态定位
 
@@ -733,3 +737,73 @@ z-index: 1;
 - 使用了定位的才可以使用 z-index
 
 - 数值越大，越靠上
+
+### 显示与隐藏
+
+- display 设置 none 隐藏元素，隐藏后标准流中不保留位置
+
+- visibility 设置 hidden 隐藏元素后，保留原有位置
+
+- overflow 设置 hidden 文本内容超过元素的宽高后，自动隐藏
+
+### cursor
+
+鼠标放置元素上显示样式
+
+| 属性          | 说明  |
+| ----------- | --- |
+| default     | 默认  |
+| pointer     | 小手  |
+| move        | 移动  |
+| text        | 文本  |
+| not-allowed | 禁止  |
+
+### outline
+
+绘制元素周围的一条线，outline-color | outline-style | outline-width;
+
+```css
+outline: none;
+outline: 0;
+```
+
+### resize
+
+取消文本框拖拽
+
+```css
+resize: none;
+```
+
+### vertical-align
+
+文本与行内块在同一盒子内，可使用 vertical-align 消除行内块与边框之间的间距。间距是为文本所留的基线内容
+
+```css
+vertical-align: middle;
+```
+
+### white-space
+
+文本强制一行显示
+
+```css
+white-space: nowrap;
+```
+
+### text-overflow
+
+文本溢出显示方式
+
+```css
+text-overflow: clip; /* 剪切 */
+text-overflow: ellipsis; /* 省略号 */
+```
+
+使用溢出的文本用省略号展示
+
+```css
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+```
